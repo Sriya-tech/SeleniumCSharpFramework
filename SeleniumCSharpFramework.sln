@@ -2,13 +2,32 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeleniumCSharpFramework.AppHost", "SeleniumCSharpFramework.AppHost\SeleniumCSharpFramework.AppHost.csproj", "{469D07B1-158E-4470-B4F6-2901ED4042BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SeleniumCSharpFramework.AppHost", "SeleniumCSharpFramework.AppHost\SeleniumCSharpFramework.AppHost.csproj", "{469D07B1-158E-4470-B4F6-2901ED4042BD}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SeleniumCSharpFramework.ServiceDefaults", "SeleniumCSharpFramework.ServiceDefaults\SeleniumCSharpFramework.ServiceDefaults.csproj", "{E7555D95-5428-46CE-9786-0B30630AB6C4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Functional Test", "Functional Test", "{E2498455-0BE7-4334-BFDE-AAC932795C89}"
 	ProjectSection(SolutionItems) = preProject
+		ApiTests.cs = ApiTests.cs
 		LoginTests.cs = LoginTests.cs
+		FormSubmissionTests.cs = FormSubmissionTests.cs
+		NavigationTests.cs = NavigationTests.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utils", "Utils", "{37089076-D8C5-4D45-921A-A8A67370D304}"
+	ProjectSection(SolutionItems) = preProject
+		BaseTest.cs = BaseTest.cs
+		TestData.cs = TestData.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pages", "Pages", "{5D3310B3-34EF-43E2-9A43-4B865DD1FC7F}"
+	ProjectSection(SolutionItems) = preProject
+		LoginPages.cs = LoginPages.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Driver", "Driver", "{5C2EBF56-9C25-4A55-9522-8F57C31D091E}"
+	ProjectSection(SolutionItems) = preProject
+		WebDriverFactory.cs = WebDriverFactory.cs
 	EndProjectSection
 EndProject
 Global
